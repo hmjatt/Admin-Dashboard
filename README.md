@@ -13,6 +13,8 @@ Admin Dashboard created using CSS Grid Layout. Feel free to give me reviews at m
 
 
     Q: How do you explain the Inception movie to a programmer?
-    A: Basically, when you run a VM inside another VM, inside another VM, inside another VM..., everything runs real slow!
+    A: Basically, when you run a VM inside another VM, 
+        inside another VM, inside another VM..., 
+        everything runs real slow!
 >  	
 > :laughing:	:space_invader:
