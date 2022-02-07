@@ -4,7 +4,6 @@
 
 [Live Demo](https://hmjatt.github.io/Admin-Dashboard/)
 
-
 Admin Dashboard created using CSS Grid Layout. Feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
 
 ### Technologies Used

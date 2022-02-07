@@ -1,1 +1,134 @@
 /* Admin Dashboard */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-color: #f6ecc4;
+    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.438);
+    border-radius: 20px;
+}
+
+.container-div {
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+
+.projects-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-1, .project-2, .project-3 {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    width: 80vw;
+    align-self: center;
+}
+
+.project-1 {
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.project-2, .project-3 {
+    background-color: rgba(255, 255, 255, 0.932);
+}
+
+.border-under {
+    height: 1px;
+    border-bottom: 20px solid rgba(255, 255, 255, 0.459);
+    width: 65vw;
+    border-radius: 50px;
+    margin-top: -10px;
+    align-self: center;
+}
+
+.collapse-button{
+    display: flex;
+    align-self: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 10px;
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.459);
+}
+
+
+
+h1, h2 {
+    color: rgb(61, 61, 61);
+    padding: 20px;
+}
+
+h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+h1 {
+    padding-bottom: 0px;
+}
+
+
+
+.other-menus-div {
+    display: flex;
+    
+ 
+}
+
+.other-menus p {
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.493);
+    padding-left: 20px;
+}
+
+
+.stats-div {
+    background-color: rgb(255, 252, 251);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 60vh;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+}
+
+.stats img {
+    height: 60vw;
+}
+
+
+.icons-div {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+.icons-div div {
+    align-self: center;
+}
+
+@media (max-width:380px) {
+    .stats img {
+        height: 40vw;
+        width: 85vw;
+    }
+}
