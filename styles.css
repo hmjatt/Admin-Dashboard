@@ -193,6 +193,11 @@ h1 {
         display: flex;
     }
 
+    .container-desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .container-div {
         display: none;
     }
@@ -262,24 +267,136 @@ h1 {
         padding: 20px;
     }
 
+    .search-bar {
+        display: flex;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #e4fff9;
+        grid-area: search;
+    }
+    .search-bar p {
+        color: rgb(138, 138, 138);
+        margin-top: 12px;
+    }
+
+    .search-bar img {
+        height: 25px;
+        padding-left: 20px;
+        padding-top: 7px;
+        padding-right: 20px;
+    }
+
+    .projects-desk {
+        grid-area: projects;
+    }
+
+    .event-dates {
+        grid-area: dates;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .events-desk {
+        grid-area: events;
+        display: flex;
+    }
+
+
     .middle-content {
         grid-area: middle-content;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: auto;
+
+        grid-template-rows: 35px 1fr 1fr 1fr;
+        grid-template-areas:
+        "search"
+        "projects"
+        "dates"
+        "events";
+    
+    }
+
+    .project-heading-div {
         display: flex;
+        flex-direction: column;
+    }
+
+    .categorize {
+        display: flex;
+    }
+
+    .projects-div-desk {
+        display: flex
+    }
+
+    .project-svgs-desk {
+        display: flex;
+    }
+
+    .heading-dates {
+        display: flex;
+    }
+
+    .dates-div {
+        display: flex;
+    }
+
+    
+    .events-desk  img{
+        width: 60px;
+    }
+
+    .awards-desk img {
+        width: 50px;
+    }
+ 
+    .lang-id {
+        display: flex;
+        grid-area: id;
+    }
+
+    .announcements-div {
+        display: flex;
+        flex-direction: column;
+        grid-area: announce;
+    }
+
+    .stats-desk-div {
+        display: flex;
+        flex-direction: column;
+        grid-area: stats;
     }
 
     .right-panel {
         grid-area: right-panel;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto;
+
+        grid-template-rows: 100px 1fr 1fr;
+        grid-template-areas: 
+          "id"
+          "announce"
+          "stats";
     }
 
     .container-desktop {
         display: grid;
-        grid-template-columns: 1fr 3fr 2fr;
+        grid-template-columns: 1fr 4fr 1fr;
 
         grid-template-rows: auto;
         grid-template-areas: 
           "left-panel middle-content right-panel"
           "left-panel middle-content right-panel"
           "left-panel middle-content right-panel";
+    }
+
+    .id-logo img {
+        width: 100px;
+        border-radius: 50px;
+    }
+
+    .stats-svg-desk img {
+        width: 300px;
     }
 }
