@@ -3,8 +3,8 @@
 html {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
-    background-color: #f6ecc4;
-    background-image: linear-gradient(315deg, #f6ecc4 0%, #f7d4d4 74%);
+    background-color: #5b6467;
+    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
 }
 
 body {
@@ -26,27 +26,50 @@ body {
 }
 
 .project-1, .project-2, .project-3 {
-    margin-top: 20px;
-    padding: 15px;
+    margin-top: 10px;
+    padding: 10px;
     border-radius: 50px;
     width: 80vw;
     align-self: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .project-1 {
-    background-color: rgba(255, 255, 255, 0.37);
+    background-color: rgba(255, 255, 255, 0.322);
 }
 
 .project-2, .project-3 {
-    background-color: rgba(255, 255, 255, 0.932);
+    background-color: rgb(255, 255, 255);
 }
+
+.svg-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.svg-title p {
+    color: rgb(65, 65, 65);
+}
+
+.svg-title p, .count p {
+    font-size: 14px;
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+.svg-mob img{
+    height: 24px;
+    padding: 12px;
+}
+
 
 .border-under {
     height: 1px;
     border-bottom: 20px solid rgba(255, 255, 255, 0.459);
-    width: 65vw;
+    width: 75vw;
     border-radius: 50px;
-    margin-top: -10px;
+    margin-top: -12px;
     align-self: center;
 }
 
@@ -64,7 +87,7 @@ body {
 
 
 h1, h2 {
-    color: rgb(61, 61, 61);
+    color: rgb(43, 42, 42);
     padding: 20px;
 }
 
@@ -83,7 +106,7 @@ h1 {
 .other-menus-div {
     display: flex;
     
- 
+    margin-top: -40px;
 }
 
 .other-menus p {
@@ -95,11 +118,12 @@ h1 {
 
 
 .stats-div {
-    background-color: rgb(255, 252, 251);
+    
+    background-color: rgb(255, 255, 255);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 60vh;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -111,24 +135,44 @@ h1 {
 }
 
 .stats img {
-    height: 60vw;
+   height: 45vw;
+   padding-bottom: 60px;
 }
 
 
 .icons-div {
     display: flex;
     justify-content: space-around;
-    height: 80px;
-    background-color: rgb(255, 255, 255);
+    height: 90px;
+    background-color: #e1e9ec;
     border-radius: 20px;
 }
 .icons-div div {
     align-self: center;
 }
 
+.icons-div div img {
+    align-self: center;
+    width: 30px;
+}
+
 @media (max-width:380px) {
     .stats img {
-        height: 40vw;
+        height: 50vw;
         width: 85vw;
+        padding-bottom: 0px;
+    }
+
+    .stats {
+        margin-top: -40px;
+    }
+
+    h1, h2{
+        margin-top: 0px;
+        margin-bottom: 10px;
     }
 }
+
+/* @media (min-width:500px) {
+
+} */
