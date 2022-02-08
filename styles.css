@@ -156,6 +156,10 @@ h1 {
     width: 30px;
 }
 
+.desktop {
+    display: none;;
+}
+
 @media (max-width:380px) {
     .stats img {
         height: 50vw;
@@ -173,6 +177,11 @@ h1 {
     }
 }
 
-/* @media (min-width:500px) {
-
-} */
+@media (min-width:500px) {
+    .desktop {
+        display: flex;
+    }
+    .container-div {
+        display: none;
+    }
+}
