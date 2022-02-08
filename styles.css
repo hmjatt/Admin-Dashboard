@@ -3,8 +3,10 @@
 html {
     font-family: 'Montserrat', sans-serif;
     height: 100%;
-    background-color: #5b6467;
-    background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+    background-color: #52a7c1;
+    background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+    
+    
 }
 
 body {
@@ -144,7 +146,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     height: 90px;
-    background-color: #e1e9ec;
+    background-color: rgb(241, 245, 255);
     border-radius: 20px;
 }
 .icons-div div {
@@ -177,11 +179,107 @@ h1 {
     }
 }
 
-@media (min-width:500px) {
+@media (min-width:500px) 
+{
+
+    body {
+        margin: 50px;
+        padding: 20px;
+        background-color: #ebf8fc9a;
+        border-radius: 40px;
+    }
+
     .desktop {
         display: flex;
     }
+
     .container-div {
         display: none;
+    }
+
+    .navbar {
+        grid-area: nav;
+    }
+    
+    .logo{
+        grid-area: logo;
+    }
+
+    .github-logo-div {
+        grid-area: github;
+    }
+
+    .left-panel {
+        grid-area: left-panel;
+        display: grid;
+        grid-template-columns: auto;
+
+        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-areas:
+        "logo"
+        "nav"
+        "."
+        "github";
+    }
+
+    span {
+        color: #52a7c1;
+    }
+
+    #home-desk {
+        background-color: #dffff8;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 1px;
+        padding-left: 90px;
+    }
+    
+    #home-svg {
+        margin-left: -40px;
+    }
+
+    #icons-home {
+        margin-left: -50px;
+    }
+    
+    .icons-desk {
+        display: flex;
+        padding: 15px;
+    }
+
+    .icons-desk img{
+        width: 30px;
+    }
+
+    .icons-desk p{
+        font-size: 12px;
+        font-weight: 600;
+        padding-left: 30px;
+    }
+
+    .github-logo-div img {
+        width: 60px;
+        padding: 20px;
+    }
+
+    .middle-content {
+        grid-area: middle-content;
+        display: flex;
+    }
+
+    .right-panel {
+        grid-area: right-panel;
+        display: flex;
+    }
+
+    .container-desktop {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "left-panel middle-content right-panel"
+          "left-panel middle-content right-panel"
+          "left-panel middle-content right-panel";
     }
 }
