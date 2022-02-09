@@ -2,7 +2,6 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
-    height: 100%;
     background-color: #52a7c1;
     background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
     
@@ -11,6 +10,7 @@ html {
 
 body {
     background-color: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.418);
     border-radius: 20px;
 }
 
@@ -137,8 +137,7 @@ h1 {
 }
 
 .stats img {
-   height: 45vw;
-   padding-bottom: 60px;
+  width: 80vw;
 }
 
 
@@ -146,7 +145,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     height: 90px;
-    background-color: rgb(241, 245, 255);
+    background-color: #dffff8;
     border-radius: 20px;
 }
 .icons-div div {
@@ -164,9 +163,7 @@ h1 {
 
 @media (max-width:380px) {
     .stats img {
-        height: 50vw;
-        width: 85vw;
-        padding-bottom: 0px;
+        width: 70vw;
     }
 
     .stats {
@@ -177,16 +174,26 @@ h1 {
         margin-top: 0px;
         margin-bottom: 10px;
     }
+
+    .project-1, .project-2, .project-3 {
+        padding: 5px;
+    }
 }
 
-@media (min-width:500px) 
+@media (min-width:1000px) 
 {
 
     body {
+
         margin: 50px;
         padding: 20px;
         background-color: #ebf8fc9a;
         border-radius: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.418);
+    }
+
+    h2 {
+        padding-left: 0;
     }
 
     .desktop {
@@ -228,7 +235,7 @@ h1 {
     }
 
     span {
-        color: #52a7c1;
+        color: #10b5c9;
     }
 
     #home-desk {
@@ -324,6 +331,13 @@ h1 {
 
     .categorize {
         display: flex;
+    }
+
+    .categorize p {
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #666666;
     }
 
     .projects-div-desk {
