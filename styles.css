@@ -4,7 +4,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: #52a7c1;
     background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-    
+    height: 100vh;
     
 }
 
@@ -180,11 +180,10 @@ h1 {
     }
 }
 
-@media (min-width:1000px) 
-{
+@media (min-width:1000px) {
 
     body {
-
+        height: 87vh;
         margin: 50px;
         padding: 20px;
         background-color: #ebf8fc9a;
@@ -192,12 +191,25 @@ h1 {
         border: 1px solid rgba(255, 255, 255, 0.418);
     }
 
+    h1 {
+        font-size: 36px;
+        color: rgb(43, 42, 42);
+    }
+
     h2 {
         padding-left: 0;
+        font-size: 28px;
+        color: rgb(43, 42, 42);
+    }
+    h3 {
+        color: rgb(43, 42, 42);
     }
 
     .desktop {
         display: flex;
+        padding: 30px;
+        padding-top: 0px;
+        height: 85vh;
     }
 
     .container-desktop {
@@ -243,7 +255,7 @@ h1 {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 1px;
-        padding-left: 90px;
+        padding-left: 120px;
     }
     
     #home-svg {
@@ -251,7 +263,7 @@ h1 {
     }
 
     #icons-home {
-        margin-left: -50px;
+        margin-left: -80px;
     }
     
     .icons-desk {
@@ -272,12 +284,15 @@ h1 {
     .github-logo-div img {
         width: 60px;
         padding: 20px;
+        padding-bottom: 20px;
     }
 
     .search-bar {
         display: flex;
-        height: 40px;
-        border-radius: 20px;
+        max-width: 500px;
+        padding-top: 10px;
+        height: 50px;
+        border-radius: 30px;
         background-color: #e4fff9;
         grid-area: search;
     }
@@ -295,9 +310,11 @@ h1 {
 
     .projects-desk {
         grid-area: projects;
+        padding-top: 20px;
     }
 
     .event-dates {
+        margin-top: 50px;
         grid-area: dates;
         display: flex;
         flex-direction: column;
@@ -306,6 +323,7 @@ h1 {
     .events-desk {
         grid-area: events;
         display: flex;
+        justify-content: space-between;
     }
 
 
@@ -315,7 +333,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 35px 1fr 1fr 1fr;
+        grid-template-rows: 35px 2fr 1fr 120px;
         grid-template-areas:
         "search"
         "projects"
@@ -335,30 +353,136 @@ h1 {
 
     .categorize p {
         padding-right: 20px;
-        font-size: 15px;
-        font-weight: 500;
-        color: #666666;
+        font-size: 16px;
     }
 
     .projects-div-desk {
-        display: flex
+        display: flex;
+        justify-content: space-between;
+
     }
 
     .project-svgs-desk {
         display: flex;
+        justify-content: space-around;
+    }
+
+    .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
+        padding-top: 20px;
+    }
+
+    .calculator-div {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    #form-desk, #calculator-desk, #etch-a-sketch-desk {
+        max-height: 25vh;
+        border-radius: 20px;
+        box-shadow: 1px 30px 35px #0266774d;
     }
 
     .heading-dates {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .heading-dates button {
+        border: 1px solid rgba(0, 0, 0, 0.589);
+        font-family: 'Montserrat', sans-serif;
+        background-color: #d9f5ff;
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 50px;
+        height: 50px;
     }
 
     .dates-div {
         display: flex;
+        margin-top: 25px;
+        justify-content: space-between;
     }
 
-    
-    .events-desk  img{
+    .dates-div .date {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+
+    #days-orange {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ff8a75;
+        color: #ffffff;
+        border-radius: 50px;
+        margin-left: -25px;
+        margin-right: -25px;
         width: 60px;
+    }
+
+    #day-fr {
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    #dot-above-orange, #dot-above {
+        font-size: 30px;
+        font-weight: 900;
+        margin-top: -20px;
+        color: #008bcc;
+    }
+    .day, #day-mon {
+        font-weight: 500;
+        color: #2c2c2c;
+
+    }
+
+
+    #date-14, #date-11 {
+        display: flex;
+        font-size: 22px;
+        font-weight: 700;
+        
+    }
+
+    #date-14 p, #date-11 p  {
+        margin-top: 2px;
+    }
+
+    .past-event-desk, .awards-desk {
+        display: flex;
+        background-color: #f0fbffab;
+        padding: 15px;
+        border-radius: 20px;
+        max-width: 400px;
+    }
+
+ 
+
+    .events-desk p {
+        font-size: 12px;
+        color: #616161;
+    }
+    .events-desk h3 {
+        color: #2c2c2c;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    
+    .awards-bonus {
+        padding-left: 20px;
+    }
+
+    .past-events {
+        padding-left: 20px;
+    }
+    
+
+    .events-desk  img{
+        width: 80px;
     }
 
     .awards-desk img {
@@ -397,7 +521,7 @@ h1 {
     .container-desktop {
         display: grid;
         grid-template-columns: 1fr 4fr 1fr;
-
+        column-gap: 5vw;
         grid-template-rows: auto;
         grid-template-areas: 
           "left-panel middle-content right-panel"
