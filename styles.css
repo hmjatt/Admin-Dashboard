@@ -4,15 +4,15 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: #52a7c1;
     background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-    height: 100vh;
-    
+
 }
 
-body {
+/* body {
     background-color: rgba(255, 255, 255, 0.438);
     border: 1px solid rgba(255, 255, 255, 0.418);
     border-radius: 20px;
-}
+    font-family: 'Montserrat', sans-serif;
+} */
 
 .container-div {
     height: 98vh;
@@ -180,12 +180,21 @@ h1 {
     }
 }
 
+
+
 @media (min-width:1000px) {
 
+    html {
+         font-family: 'Montserrat', sans-serif;
+        background-color: #52a7c1;
+        background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+        height: 100vh;
+        padding: 50px;
+    }
+
     body {
-        height: 87vh;
-        margin: 50px;
-        padding: 20px;
+        height: 95vh;
+
         background-color: #ebf8fc9a;
         border-radius: 40px;
         border: 1px solid rgba(255, 255, 255, 0.418);
@@ -207,9 +216,7 @@ h1 {
 
     .desktop {
         display: flex;
-        padding: 30px;
-        padding-top: 0px;
-        height: 85vh;
+
     }
 
     .container-desktop {
@@ -238,7 +245,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 1fr 3fr 1fr 1fr;
+        grid-template-rows: 200px 2fr 10px 1fr;
         grid-template-areas:
         "logo"
         "nav"
@@ -314,7 +321,6 @@ h1 {
     }
 
     .event-dates {
-        margin-top: 50px;
         grid-area: dates;
         display: flex;
         flex-direction: column;
@@ -333,7 +339,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 35px 2fr 1fr 120px;
+        grid-template-rows: 50px 550px 180px 120px;
         grid-template-areas:
         "search"
         "projects"
@@ -492,12 +498,59 @@ h1 {
     .lang-id {
         display: flex;
         grid-area: id;
+        justify-content: end;
+    }
+
+    .lang-id div {
+        padding-left: 40px;
+    }
+
+    .lang {
+        display: flex;
+        align-self: center;
+    }
+
+    .lang img {
+        width: 25px;
+    }
+
+    .bell {
+        display: flex;
+        align-self: center;
+    }
+    
+    .bell img{
+        width: 30px;
     }
 
     .announcements-div {
         display: flex;
         flex-direction: column;
         grid-area: announce;
+   
+    }
+
+    .announcements-div p {
+        font-size: 14px;
+        font-weight: 500;
+        color: #555555;
+    }
+
+
+    .announcements {
+        border-radius: 30px;
+        background-color: #d9f5ff;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        box-shadow: 5px 50px 35px #00303857;
+    }
+
+    .horizontal-line {
+        height: 1px;
+        border-bottom: 1px solid rgb(151, 151, 151);
+        width: 90%;
+        margin: auto;
     }
 
     .stats-desk-div {
@@ -506,11 +559,20 @@ h1 {
         grid-area: stats;
     }
 
+    .stats-svg-desk {
+        border-radius: 30px;
+        background-color: #d9f5ff;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        box-shadow: 5px 50px 35px #00303857;
+    }
+
     .right-panel {
         grid-area: right-panel;
         display: grid;
         grid-template-columns: auto;
-
+        padding-top: 10px;
         grid-template-rows: 100px 1fr 1fr;
         grid-template-areas: 
           "id"
@@ -520,7 +582,7 @@ h1 {
 
     .container-desktop {
         display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-columns: 150px 4fr 1fr;
         column-gap: 5vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -530,11 +592,30 @@ h1 {
     }
 
     .id-logo img {
-        width: 100px;
+        width: 80px;
         border-radius: 50px;
     }
 
     .stats-svg-desk img {
         width: 300px;
     }
+}
+
+/* @media (max-width:1500px) {
+    .Etch-A-Sketch-div {
+        display: none;
+    }
+} */ 
+
+@media (max-width:1500px) {
+    .projects-div-desk {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .form-project-div {
+        padding-bottom: 20px;
+    } 
 }
