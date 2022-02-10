@@ -458,9 +458,10 @@ h1 {
     .dates-div {
         display: flex;
         margin-top: 25px;
-        border-radius: 50px;
+        border-radius: 70px;
         box-shadow: 1px 10px 15px #067f9750;
-        background-color: #00ccff46;
+        padding: 20px;
+        background-color: #a4edff98;
         justify-content: space-around;
     }
 
