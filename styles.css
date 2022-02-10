@@ -7,12 +7,12 @@ html {
 
 }
 
-/* body {
+body {
     background-color: rgba(255, 255, 255, 0.438);
     border: 1px solid rgba(255, 255, 255, 0.418);
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
-} */
+}
 
 .container-div {
     height: 98vh;
@@ -180,21 +180,41 @@ h1 {
     }
 }
 
-
-
-@media (min-width:1000px) {
-
+/* @media (min-width:700px) {
     html {
-         font-family: 'Montserrat', sans-serif;
-        background-color: #52a7c1;
-        background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-        height: 100vh;
-        padding: 50px;
+
+        height: 10vh;
+
     }
 
     body {
         height: 95vh;
 
+    }
+
+} */
+
+
+@media (min-width:700px) {
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #52a7c1;
+        background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
+        height: 200vh;
+        padding: 50px;
+        padding-right: 100px;
+        min-height: 1150px;
+        min-width: 1300px;
+    }
+
+    body {
+        height: 195vh;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        min-width: 1300px;
+        min-height: 1100px;
         background-color: #ebf8fc9a;
         border-radius: 40px;
         border: 1px solid rgba(255, 255, 255, 0.418);
@@ -216,13 +236,8 @@ h1 {
 
     .desktop {
         display: flex;
-
     }
 
-    .container-desktop {
-        display: flex;
-        justify-content: space-between;
-    }
 
     .container-div {
         display: none;
@@ -244,8 +259,9 @@ h1 {
         grid-area: left-panel;
         display: grid;
         grid-template-columns: auto;
+        
 
-        grid-template-rows: 200px 2fr 10px 1fr;
+        grid-template-rows: auto;
         grid-template-areas:
         "logo"
         "nav"
@@ -262,15 +278,15 @@ h1 {
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 1px;
-        padding-left: 120px;
+        padding-left: 170px;
     }
     
     #home-svg {
-        margin-left: -40px;
+        margin-left: -50px;
     }
 
     #icons-home {
-        margin-left: -80px;
+        margin-left: -120px;
     }
     
     .icons-desk {
@@ -322,14 +338,17 @@ h1 {
 
     .event-dates {
         grid-area: dates;
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
     }
 
     .events-desk {
         grid-area: events;
+        margin-top: 20px;
+        max-height: 200px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
@@ -339,7 +358,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 50px 550px 180px 120px;
+        grid-template-rows: auto;
         grid-template-areas:
         "search"
         "projects"
@@ -368,9 +387,39 @@ h1 {
 
     }
 
+    .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .like, .comment, .share {
+        align-self: center;
+    }
+
+    .bar {
+        font-size: 28px;
+        color: rgb(255, 154, 123);
+    }
+
+    .projects-div-desk h3 {
+        align-self: center;
+        color: #202020;
+    }
+
     .project-svgs-desk {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+
+    .form-project-div, .calculator-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-div-desk a {
+        display: flex;
+        justify-content: center;
     }
 
     .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
@@ -383,7 +432,8 @@ h1 {
     }
 
     #form-desk, #calculator-desk, #etch-a-sketch-desk {
-        max-height: 25vh;
+        
+        width: 70%;
         border-radius: 20px;
         box-shadow: 1px 30px 35px #0266774d;
     }
@@ -391,6 +441,7 @@ h1 {
     .heading-dates {
         display: flex;
         justify-content: space-between;
+
     }
 
     .heading-dates button {
@@ -407,7 +458,10 @@ h1 {
     .dates-div {
         display: flex;
         margin-top: 25px;
-        justify-content: space-between;
+        border-radius: 50px;
+        box-shadow: 1px 10px 15px #067f9750;
+        background-color: #00ccff46;
+        justify-content: space-around;
     }
 
     .dates-div .date {
@@ -420,7 +474,7 @@ h1 {
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: #ff8a75;
+        background-color: #ff5b3ed3;
         color: #ffffff;
         border-radius: 50px;
         margin-left: -25px;
@@ -463,6 +517,7 @@ h1 {
         padding: 15px;
         border-radius: 20px;
         max-width: 400px;
+        margin: 20px;
     }
 
  
@@ -488,7 +543,7 @@ h1 {
     
 
     .events-desk  img{
-        width: 80px;
+        width: 64px;
     }
 
     .awards-desk img {
@@ -497,6 +552,7 @@ h1 {
  
     .lang-id {
         display: flex;
+        max-height: 50px;
         grid-area: id;
         justify-content: end;
     }
@@ -507,6 +563,7 @@ h1 {
 
     .lang {
         display: flex;
+        margin-top: 10px;
         align-self: center;
     }
 
@@ -516,6 +573,7 @@ h1 {
 
     .bell {
         display: flex;
+        margin-top: 10px;
         align-self: center;
     }
     
@@ -526,6 +584,7 @@ h1 {
     .announcements-div {
         display: flex;
         flex-direction: column;
+        
         grid-area: announce;
    
     }
@@ -538,12 +597,18 @@ h1 {
 
 
     .announcements {
+        min-height: 300px;
+        max-width: 430px;
         border-radius: 30px;
         background-color: #d9f5ff;
         padding: 20px;
         margin-bottom: 50px;
         margin-top: 30px;
         box-shadow: 5px 50px 35px #00303857;
+    }
+
+    .announcements h2 {
+        margin-top: 0px;
     }
 
     .horizontal-line {
@@ -560,20 +625,38 @@ h1 {
     }
 
     .stats-svg-desk {
+        display: flex;
+        flex-direction: column;
         border-radius: 30px;
-        background-color: #d9f5ff;
+        /* border: 1px solid blue; */
         padding: 20px;
-        margin-bottom: 50px;
         margin-top: 30px;
-        box-shadow: 5px 50px 35px #00303857;
+
     }
 
+    .stat-str {
+        color: #424242;
+        font-weight: 500;
+    }
+
+    .stat-num {
+        color: #003858;
+        font-size: 70px;
+        margin: 0px;
+        font-weight: 700;
+    }
+
+    .stats-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .right-panel {
         grid-area: right-panel;
         display: grid;
         grid-template-columns: auto;
         padding-top: 10px;
-        grid-template-rows: 100px 1fr 1fr;
+        grid-template-rows: auto;
         grid-template-areas: 
           "id"
           "announce"
@@ -582,7 +665,8 @@ h1 {
 
     .container-desktop {
         display: grid;
-        grid-template-columns: 150px 4fr 1fr;
+        padding: 20px;
+        grid-template-columns: auto;
         column-gap: 5vw;
         grid-template-rows: auto;
         grid-template-areas: 
@@ -595,27 +679,63 @@ h1 {
         width: 80px;
         border-radius: 50px;
     }
-
-    .stats-svg-desk img {
-        width: 300px;
-    }
-}
-
-/* @media (max-width:1500px) {
-    .Etch-A-Sketch-div {
-        display: none;
-    }
-} */ 
-
-@media (max-width:1500px) {
-    .projects-div-desk {
+    .stats-img {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .form-project-div {
-        padding-bottom: 20px;
-    } 
+    .stats-svg-desk img {
+       height: 25vh;
+       border-radius: 20px;
+    }
+}
+
+@media (min-width:900px) {
+    html {
+
+        height: 152vh;
+
+    }
+
+    body {
+        height: 138vh;
+        margin: 50px;
+    }
+
+}
+
+@media (min-width:1100px) {
+    html {
+
+        height: 118vh;
+
+    }
+
+    body {
+        height: 110vh;
+        margin: 50px;
+    }
+
+}
+
+@media (min-width:2300px) {
+
+  
+    #home-desk {
+        background-color: #dffff8;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 1px;
+        padding-left: 220px;
+    }
+    
+    #home-svg {
+        margin-left: -50px;
+    }
+
+    #icons-home {
+        margin-left: -170px;
+    }
+
+    
 }
