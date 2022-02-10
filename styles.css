@@ -719,7 +719,19 @@ h1 {
 
 }
 
-@media (min-width:2300px) {
+@media (min-width:1600px) {
+
+    html {
+
+        height: 100vh;
+
+    }
+
+    body {
+        height: 95vh;
+        padding-bottom: 100px;
+        margin: 50px;
+    }
 
   
     #home-desk {
