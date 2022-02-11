@@ -201,16 +201,15 @@ h1 {
         font-family: 'Montserrat', sans-serif;
         background-color: #52a7c1;
         background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-        height: 200vh;
-        padding: 50px;
-        padding-right: 100px;
+        height: 100vh;
         min-height: 1150px;
         min-width: 1300px;
     }
 
     body {
-        height: 195vh;
-        margin: 30px;
+        height: 92vh;
+        margin: 50px;
+        padding: 50px;
         display: flex;
         justify-content: center;
         min-width: 1300px;
@@ -236,6 +235,7 @@ h1 {
 
     .desktop {
         display: flex;
+        max-height: 60vh;
     }
 
 
@@ -433,7 +433,7 @@ h1 {
 
     #form-desk, #calculator-desk, #etch-a-sketch-desk {
         
-        width: 70%;
+        width: 40%;
         border-radius: 20px;
         box-shadow: 1px 30px 35px #0266774d;
     }
@@ -598,8 +598,6 @@ h1 {
 
 
     .announcements {
-        min-height: 300px;
-        max-width: 430px;
         border-radius: 30px;
         background-color: #d9f5ff;
         padding: 20px;
@@ -666,9 +664,9 @@ h1 {
 
     .container-desktop {
         display: grid;
-        padding: 20px;
+        max-height: 60vh;
+
         grid-template-columns: auto;
-        column-gap: 5vw;
         grid-template-rows: auto;
         grid-template-areas: 
           "left-panel middle-content right-panel"
@@ -686,12 +684,12 @@ h1 {
     }
 
     .stats-svg-desk img {
-       height: 25vh;
+       width: 15vw;
        border-radius: 20px;
     }
 }
 
-@media (min-width:900px) {
+/* @media (min-width:900px) {
     html {
 
         height: 152vh;
@@ -724,13 +722,12 @@ h1 {
     html {
 
         height: 100vh;
-
+        padding: 0px;
     }
 
     body {
-        height: 95vh;
-        padding-bottom: 100px;
-        margin: 50px;
+        height: 90vh;
+        margin-top: 0px;
     }
 
   
@@ -751,4 +748,4 @@ h1 {
     }
 
     
-}
+} */

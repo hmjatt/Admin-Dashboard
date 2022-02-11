@@ -1,6 +1,6 @@
 # Admin-Dashboard
 
-
+![This is an image](https://raw.githubusercontent.com/hmjatt/Sign-up-Form/main/images/sign-up-form-screenshot.jpg)
 
 [Live Demo](https://hmjatt.github.io/Admin-Dashboard/)
 
