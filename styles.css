@@ -4,7 +4,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     background-color: #52a7c1;
     background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-
+height: 100vh;
 }
 
 body {
@@ -180,62 +180,52 @@ h1 {
     }
 }
 
-/* @media (min-width:700px) {
-    html {
 
-        height: 10vh;
-
-    }
-
-    body {
-        height: 95vh;
-
-    }
-
-} */
 
 
 @media (min-width:700px) {
 
     html {
+   
         font-family: 'Montserrat', sans-serif;
         background-color: #52a7c1;
         background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-        height: 100vh;
-        min-height: 1150px;
-        min-width: 1300px;
+        min-width: 1200px;
+        min-height: 680px; 
     }
 
     body {
-        height: 92vh;
-        margin: 50px;
-        padding: 50px;
+        height: 97vh;   
         display: flex;
         justify-content: center;
-        min-width: 1300px;
-        min-height: 1100px;
+        /* max-width: 1300px;
+        max-height: 1100px;  */
         background-color: #ebf8fc9a;
         border-radius: 40px;
-        border: 1px solid rgba(255, 255, 255, 0.418);
+        border: 1px solid rgba(255, 255, 255, 0.836);
     }
 
     h1 {
-        font-size: 36px;
+        font-size:28px;
+        padding-top: 0px;
+        margin-top: 0px;
         color: rgb(43, 42, 42);
     }
 
     h2 {
         padding-left: 0;
-        font-size: 28px;
+        
+        font-size: 20px;
         color: rgb(43, 42, 42);
     }
     h3 {
         color: rgb(43, 42, 42);
+        font-size: 14px;
     }
 
     .desktop {
         display: flex;
-        max-height: 60vh;
+        padding: 30px;
     }
 
 
@@ -261,7 +251,7 @@ h1 {
         grid-template-columns: auto;
         
 
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "logo"
         "nav"
@@ -270,11 +260,11 @@ h1 {
     }
 
     span {
-        color: #10b5c9;
+        color: #00a8bb;
     }
 
     #home-desk {
-        background-color: #dffff8;
+        background-color: #b4f6d8;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         width: 1px;
@@ -291,7 +281,7 @@ h1 {
     
     .icons-desk {
         display: flex;
-        padding: 15px;
+        padding: 10px;
     }
 
     .icons-desk img{
@@ -312,9 +302,9 @@ h1 {
 
     .search-bar {
         display: flex;
-        max-width: 500px;
-        padding-top: 10px;
-        height: 50px;
+        max-width: 300px;
+        padding-bottom: 10px;
+        height: 30px;
         border-radius: 30px;
         background-color: #e4fff9;
         grid-area: search;
@@ -333,32 +323,36 @@ h1 {
 
     .projects-desk {
         grid-area: projects;
-        padding-top: 20px;
+
+    }
+
+    .projects-desk h3 {
+        font-size: 14px;
+        font-weight: 500;
     }
 
     .event-dates {
         grid-area: dates;
-        margin-top: 40px;
+        height: 130px;
         display: flex;
         flex-direction: column;
     }
 
     .events-desk {
         grid-area: events;
-        margin-top: 20px;
-        max-height: 200px;
         display: flex;
-        justify-content: space-around;
+        height: 100px;
+        justify-content: center;
+        margin: 10px;
     }
 
 
     .middle-content {
         grid-area: middle-content;
-        padding-top: 40px;
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "search"
         "projects"
@@ -378,13 +372,12 @@ h1 {
 
     .categorize p {
         padding-right: 20px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .projects-div-desk {
         display: flex;
-        justify-content: space-between;
-
+        justify-content: space-around;
     }
 
     .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
@@ -398,8 +391,10 @@ h1 {
     }
 
     .bar {
-        font-size: 28px;
         color: rgb(255, 154, 123);
+        font-size: 18px;
+        margin-top: -5px;
+        font-weight: 900px;
     }
 
     .projects-div-desk h3 {
@@ -409,31 +404,36 @@ h1 {
 
     .project-svgs-desk {
         display: flex;
+        height: 15px;
         justify-content: space-evenly;
     }
 
-    .form-project-div, .calculator-div {
+    .project-svgs-desk img {
+        width: 18px;
+    }
+
+    .form-project-div, .calculator-div, .Etch-A-Sketch-div {
         display: flex;
         flex-direction: column;
+        align-content: center;    
     }
 
     .projects-div-desk a {
-        display: flex;
-        justify-content: center;
+        height: 20vh;
     }
 
     .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
-        padding-top: 20px;
+        padding-top: 30px;
     }
 
-    .calculator-div {
+    /* .calculator-div {
         padding-right: 20px;
         padding-left: 20px;
-    }
+    } */
 
     #form-desk, #calculator-desk, #etch-a-sketch-desk {
         
-        width: 40%;
+        max-height: 120%;
         border-radius: 20px;
         box-shadow: 1px 30px 35px #0266774d;
     }
@@ -447,29 +447,29 @@ h1 {
     .heading-dates button {
         border: 1px solid rgba(0, 0, 0, 0.589);
         font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
         background-color: #d9f5ff;
         padding: 10px;
+        margin-top: 20px;
         padding-left: 25px;
         padding-right: 25px;
         border-radius: 50px;
-        height: 50px;
+        height: 35px;
     }
 
     .dates-div {
         display: flex;
-        margin-top: 25px;
-        border-radius: 70px;
-        box-shadow: 1px 10px 15px #067f9750;
-        padding: 20px;
-        background-color: #a4edff98;
         justify-content: space-around;
     }
 
     .dates-div .date {
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 700;
     }
 
+    .days {
+        height: 50px;
+    }
 
     #days-orange {
         display: flex;
@@ -480,30 +480,32 @@ h1 {
         border-radius: 50px;
         margin-left: -25px;
         margin-right: -25px;
-        width: 60px;
+        width: 40px;
     }
 
     #day-fr {
         color: #ffffff;
         font-weight: 500;
+        font-size: 12px;
     }
 
     #dot-above-orange, #dot-above {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: 900;
         margin-top: -20px;
         color: #008bcc;
     }
     .day, #day-mon {
+        font-size: 12px;
         font-weight: 500;
         color: #2c2c2c;
-
+        font-size: 12px;
     }
 
 
     #date-14, #date-11 {
         display: flex;
-        font-size: 22px;
+        font-size: 16px;
         font-weight: 700;
         
     }
@@ -515,23 +517,22 @@ h1 {
     .past-event-desk, .awards-desk {
         display: flex;
         background-color: #f0fbffab;
-        padding: 15px;
         border-radius: 20px;
-        max-width: 400px;
-        margin: 20px;
+        padding: 10px;
     }
 
+    .awards-desk {
+        margin-left: 20px;
+    }
  
 
     .events-desk p {
-        font-size: 12px;
+        font-size: 10px;
         color: #616161;
     }
     .events-desk h3 {
         color: #2c2c2c;
-        margin-top: 5px;
-        margin-bottom: 15px;
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .awards-bonus {
@@ -544,11 +545,11 @@ h1 {
     
 
     .events-desk  img{
-        width: 64px;
+        width: 48px;
     }
 
     .awards-desk img {
-        width: 50px;
+        width: 40px;
     }
  
     .lang-id {
@@ -564,7 +565,6 @@ h1 {
 
     .lang {
         display: flex;
-        margin-top: 10px;
         align-self: center;
     }
 
@@ -579,7 +579,7 @@ h1 {
     }
     
     .bell img{
-        width: 30px;
+        width: 23px;
     }
 
     .announcements-div {
@@ -590,20 +590,22 @@ h1 {
    
     }
 
+
     .announcements-div p {
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
         color: #555555;
     }
 
 
     .announcements {
+        height: 150px;
         border-radius: 30px;
         background-color: #d9f5ff;
-        padding: 20px;
-        margin-bottom: 50px;
-        margin-top: 30px;
-        box-shadow: 5px 50px 35px #00303857;
+        padding-left: 20px;
+        padding-left: 20px;
+        margin-top: 10px;
+        box-shadow: 5px 20px 35px #00303857;
     }
 
     .announcements h2 {
@@ -623,24 +625,26 @@ h1 {
         grid-area: stats;
     }
 
+    .stats-desk-div h2 {
+        margin-bottom: 20px;
+    }
     .stats-svg-desk {
         display: flex;
         flex-direction: column;
         border-radius: 30px;
-        /* border: 1px solid blue; */
-        padding: 20px;
-        margin-top: 30px;
 
     }
 
     .stat-str {
         color: #424242;
         font-weight: 500;
+        font-size: 12px;
+        margin: 0px;
     }
 
     .stat-num {
         color: #003858;
-        font-size: 70px;
+        font-size: 44px;
         margin: 0px;
         font-weight: 700;
     }
@@ -654,8 +658,8 @@ h1 {
         grid-area: right-panel;
         display: grid;
         grid-template-columns: auto;
-        padding-top: 10px;
-        grid-template-rows: auto;
+
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
           "id"
           "announce"
@@ -664,88 +668,29 @@ h1 {
 
     .container-desktop {
         display: grid;
-        max-height: 60vh;
-
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
           "left-panel middle-content right-panel"
           "left-panel middle-content right-panel"
-          "left-panel middle-content right-panel";
+          "left-panel middle-content right-panel"
+          "left-panel middle-content right-panel"
+          ;
     }
 
     .id-logo img {
-        width: 80px;
+        width: 60px;
         border-radius: 50px;
     }
     .stats-img {
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
     }
 
     .stats-svg-desk img {
-       width: 15vw;
+       width: 25vw;
        border-radius: 20px;
     }
 }
-
-/* @media (min-width:900px) {
-    html {
-
-        height: 152vh;
-
-    }
-
-    body {
-        height: 138vh;
-        margin: 50px;
-    }
-
-}
-
-@media (min-width:1100px) {
-    html {
-
-        height: 118vh;
-
-    }
-
-    body {
-        height: 110vh;
-        margin: 50px;
-    }
-
-}
-
-@media (min-width:1600px) {
-
-    html {
-
-        height: 100vh;
-        padding: 0px;
-    }
-
-    body {
-        height: 90vh;
-        margin-top: 0px;
-    }
-
-  
-    #home-desk {
-        background-color: #dffff8;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 20px;
-        width: 1px;
-        padding-left: 220px;
-    }
-    
-    #home-svg {
-        margin-left: -50px;
-    }
-
-    #icons-home {
-        margin-left: -170px;
-    }
-
-    
-} */
