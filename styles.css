@@ -163,7 +163,7 @@ h1 {
 
 @media (max-width:380px) {
     .stats img {
-        width: 70vw;
+        width: 60vw;
     }
 
     .stats {
