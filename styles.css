@@ -88,27 +88,22 @@ body {
 
 
 
-h1, h2 {
+h1{
     color: rgb(43, 42, 42);
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 h2 {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-}
-
-h1 {
-    padding-bottom: 0px;
+    padding: 10px 0px 0px 25px;
+    margin: 0px;
+    color: rgb(43, 42, 42);
 }
 
 
 
 .other-menus-div {
     display: flex;
-    
-    margin-top: -40px;
 }
 
 .other-menus p {
@@ -170,10 +165,13 @@ h1 {
         margin-top: -40px;
     }
 
-    h1, h2{
-        margin-top: 0px;
-        margin-bottom: 10px;
+    h1{
+        margin: 0px;
+        padding: 10px 0px 10px 20px;
     }
+    /* h2 {
+        padding-bottom: 10px;
+    } */
 
     .project-1, .project-2, .project-3 {
         padding: 5px;
@@ -183,15 +181,14 @@ h1 {
 
 
 
-@media (min-width:700px) {
+@media (min-width:500px) {
 
     html {
-   
         font-family: 'Montserrat', sans-serif;
         background-color: #52a7c1;
         background-image: linear-gradient(315deg, #52a7c1 0%, #b3f6d8 74%);
-        min-width: 1200px;
-        min-height: 680px; 
+        min-width: 1000px;
+        min-height: 800px; 
     }
 
     body {
@@ -323,7 +320,9 @@ h1 {
 
     .projects-desk {
         grid-area: projects;
-
+        display: flex;
+        
+        flex-direction: column;
     }
 
     .projects-desk h3 {
@@ -352,7 +351,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 6fr 2fr 1fr;
         grid-template-areas:
         "search"
         "projects"
@@ -377,6 +376,7 @@ h1 {
 
     .projects-div-desk {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 
@@ -420,20 +420,16 @@ h1 {
 
     .projects-div-desk a {
         height: 20vh;
+        transition: 0.5s;
     }
 
     .form-project-heading, .calculator-heading, .Etch-A-Sketch-heading {
         padding-top: 30px;
     }
 
-    /* .calculator-div {
-        padding-right: 20px;
-        padding-left: 20px;
-    } */
-
     #form-desk, #calculator-desk, #etch-a-sketch-desk {
-        
-        max-height: 120%;
+        height: 100%;
+
         border-radius: 20px;
         box-shadow: 1px 30px 35px #0266774d;
     }
@@ -599,11 +595,14 @@ h1 {
 
 
     .announcements {
-        height: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 20vh;
         border-radius: 30px;
         background-color: #d9f5ff;
-        padding-left: 20px;
-        padding-left: 20px;
+        padding: 20px;
         margin-top: 10px;
         box-shadow: 5px 20px 35px #00303857;
     }
@@ -659,7 +658,7 @@ h1 {
         display: grid;
         grid-template-columns: auto;
 
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr 5fr;
         grid-template-areas: 
           "id"
           "announce"
@@ -690,7 +689,48 @@ h1 {
     }
 
     .stats-svg-desk img {
-       width: 25vw;
+       transition: 0.5s;
+       width: 35vw;
        border-radius: 20px;
+    }
+}
+
+@media (min-width:700px) {
+    /* .middle-content {
+        grid-template-rows: 1fr 6fr 2fr 1fr;
+    } */
+
+    .projects-div-desk a {
+        height: 20vh;
+    }
+
+}
+
+@media (min-width:1600px) {
+    /* .middle-content {
+        grid-template-rows: 1fr 6fr 2fr 1fr;
+    } */
+
+    .projects-div-desk a {
+        height: 30vh;
+    }
+
+    .projects-div-desk {
+
+        flex-wrap: nowrap;
+ 
+    }
+
+    .stats-svg-desk img {
+       
+        width: 25vw;
+        border-radius: 20px;
+     }
+
+}
+
+@media (min-width:2000px) {
+    .projects-div-desk a {
+        height: 35vh;
     }
 }
