@@ -1,8 +1,10 @@
 # Admin-Dashboard
 
+## [Live Demo](https://hmjatt.github.io/Admin-Dashboard/)
+
 ![This is an image](https://raw.githubusercontent.com/hmjatt/hmjatt.github.io/master/images/admin-desk-min.png)
 
-[Live Demo](https://hmjatt.github.io/Admin-Dashboard/)
+
 
 Admin Dashboard created using CSS Grid Layout. Feel free to give me reviews at my [Twitter](https://twitter.com/hmjatt/)
 
